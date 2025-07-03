@@ -51,7 +51,7 @@ public class StudentRunner implements ApplicationRunner {
 		
 		List<Student> studentsBasedOnCourseName = studentImpl.getStudentsBasedOnCourseName("java");
 		
-		studentsBasedOnCourseName.forEach(t -> System.out.println(t));
+		studentsBasedOnCourseName.forEach(System.out :: println);
 
 	}
 
